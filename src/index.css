@@ -1,0 +1,193 @@
+@import 'react-toastify/dist/ReactToastify.css';
+
+/* Temel Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa; /* Örnek arka plan rengi */
+  color: #212529; /* Örnek metin rengi */
+}
+
+/* Ana Konteyner */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Başlık Bölümü */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Uyarı Bölümü */
+.warning {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.warning-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #856404;
+}
+
+.warning-content svg {
+  font-size: 1.2rem;
+}
+
+/* Limit Kontrolü */
+.limit-control {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.limit-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.limit-info span {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.limit-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.limit-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.limit-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.limit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Deprem Listesi */
+.earthquake-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Deprem Kartı */
+.earthquake-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  transition: transform 0.2s;
+}
+
+.earthquake-card:hover {
+  transform: translateY(-5px);
+}
+
+.magnitude {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.details {
+  flex: 1;
+  padding: 1rem;
+}
+
+.details h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.info span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.details-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.details-link:hover {
+  background-color: #0056b3;
+}
+
+/* Yükleme Durumu */
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Diğer global stiller buraya eklenebilir */
+
