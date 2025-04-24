@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://deprem-takip.netlify.app/sitemap.xml 
