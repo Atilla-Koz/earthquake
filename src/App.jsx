@@ -2,7 +2,8 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
-import Map from './pages/Map'
+import DepremDetay from './pages/DepremDetay'
+import Haritalar from './pages/Haritalar'
 import Statistics from './pages/Statistics'
 import About from './pages/About'
 import './styles/App.css'
@@ -18,7 +19,8 @@ function App() {
       <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/harita" element={<Map />} />
+          <Route path="/deprem/:id" element={<DepremDetay />} />
+          <Route path="/haritalar" element={<Haritalar />} />
           <Route path="/istatistikler" element={<Statistics />} />
           <Route path="/hakkimizda" element={<About />} />
         </Routes>
